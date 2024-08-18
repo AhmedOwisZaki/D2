@@ -22,10 +22,14 @@
     </div>
     @if (num<5) 
     {
-        <div  *ngFor="let number of listIntegers" >
+        <!--<div  *ngFor="let number of listIntegers" >
             <div>{{number}}</div>
     
-        </div>
+        </div>-->
+        @for (item of listIntegers; track item)
+         {
+            <div>{{item}}</div>
+         }
     }
     @else 
     {
