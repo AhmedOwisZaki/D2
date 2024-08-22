@@ -1,0 +1,23 @@
+
+<div>
+    <div>
+        <br>
+        <label> Enter the name</label>
+        &nbsp;
+    <input [(ngModel)]="productName" type="text">
+    <br>
+    <label> Enter the price</label>
+     &nbsp;
+      <input [(ngModel)]="ProductPrice" type="text">
+      <br>
+      <label> Enter the description</label>
+      &nbsp;
+      <input [(ngModel)]="productDescription" type="text">
+      <label> Enter the image</label>
+      &nbsp;
+      <input [(ngModel)]="ProductImage" type="text">
+      </div>
+      
+    
+    <button class="btn btn-primary"  (click)="onAddProduct()">Add Product</button>
+</div>
